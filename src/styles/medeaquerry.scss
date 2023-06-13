@@ -1,0 +1,22 @@
+/** @format */
+
+@media screen and (max-width: 820px) {
+    .cart {
+        grid-template-columns: 1fr;
+
+        > aside {
+            padding: 2rem;
+            align-items: center;
+            border-radius: 10px;
+
+            > h2 {
+                margin: 1rem;
+                font: 100 1.2rem;
+
+                &:last-of-type {
+                    font: 600 1.8rem "Roboto";
+                }
+            }
+        }
+    }
+}

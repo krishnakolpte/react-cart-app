@@ -1,0 +1,95 @@
+/** @format */
+
+@import "./colors.scss";
+
+.cart {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    > main {
+        padding: 2rem;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        > h1 {
+            color: $tertiory;
+            font: 100 2rem "Roboto";
+        }
+    }
+    > aside {
+        border-radius: 100px 0px 0px 100px;
+        background-color: $primary;
+        color: $tertiory;
+        height: 100%;
+        width: 100%;
+        box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.182);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        > h2 {
+            margin: 1rem;
+            font: 100 1.8rem;
+            letter-spacing: 2px;
+
+            &:last-of-type {
+                font: 600 1.8rem "Roboto";
+            }
+        }
+    }
+}
+
+.cartItem {
+    background-color: $tertiory;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    color: $primary;
+
+    > img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        > button {
+            width: 30px;
+            height: 40px;
+            border: none;
+            background-color: $primary;
+            color: $tertiory;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: $primarydark;
+            }
+        }
+        > p {
+            width: 30px;
+            height: 30px;
+            display: grid;
+            color: $primary;
+            place-items: center;
+        }
+    }
+    > svg {
+        color: $primarydark;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: inline-block;
+        margin: auto;
+
+        &:hover {
+            color: $secondry;
+        }
+    }
+}
